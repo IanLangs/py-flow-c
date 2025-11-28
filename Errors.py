@@ -1,0 +1,2 @@
+class ArgumentsError(TypeError):
+    pass

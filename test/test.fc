@@ -1,0 +1,12 @@
+#include <unistd.h>
+fn None init() {
+    print("init func");
+}
+fn None tick() {
+    print("tick func");
+    sleep(1);
+}
+"""
+holaaa
+"""
+//holaa
