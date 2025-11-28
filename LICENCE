@@ -1,0 +1,32 @@
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2025  IanLangs / Proyecto Flow C
+ https://github.com/IanLangs
+
+ Este programa es software libre: usted puede redistribuirlo y/o modificarlo
+ bajo los términos de la Licencia Pública General de GNU publicada por la
+ Free Software Foundation, ya sea la versión 3 de la Licencia, o (a su
+ elección) cualquier versión posterior.
+
+ Este programa se distribuye con la esperanza de que sea útil,
+ pero SIN NINGUNA GARANTÍA; incluso sin la garantía implícita de
+ COMERCIABILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR.
+ Consulte la Licencia Pública General de GNU para más detalles.
+
+ Usted debe haber recibido una copia de la Licencia Pública General de GNU
+ junto con este programa. En caso contrario, consulte <https://www.gnu.org/licenses/>.
+
+ ------------------------------------------------------------------------------
+
+                               AVISO DE ATRIBUCIÓN
+
+ Este software forma parte del proyecto Cognalian, creado por IanLangs.
+ Cualquier redistribución, con o sin modificaciones, debe conservar este aviso
+ y acreditar a “IanLangs / Proyecto Cognalian” como autor original del código.
+
+ Ejemplo de atribución recomendada:
+   “Este software incluye código del proyecto Flow C, desarrollado por IanLangs
+    (https://github.com/IanLangs).”
+
+ ------------------------------------------------------------------------------
