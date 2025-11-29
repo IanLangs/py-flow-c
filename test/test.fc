@@ -6,7 +6,3 @@ fn None tick() {
     print("tick func");
     sleep(1);
 }
-"""
-holaaa
-"""
-//holaa

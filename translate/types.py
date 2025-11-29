@@ -14,7 +14,7 @@ def primitive(code:str) -> str:
         r"""fn"""
         return ""
     for fn in (string, number, Nonetype, func):
-        code = sub(fn.__doc__, fn, code)
+        code = sub(str(fn.__doc__), fn, code)
     return code
 def all(code):
     code = primitive(code)
