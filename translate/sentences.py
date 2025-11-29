@@ -1,7 +1,7 @@
 from re import sub, Pattern, compile as recom, DOTALL
 class sentence:
-    def __init__(self, flowcs:tuple|list, c:tuple|list):
-        self.sentences = {fc:c for fc, c in zip(flowcs, c)}
+    def __init__(self, flowcs:tuple|list, cs:tuple|list):
+        self.sentences = {fc:c for fc, c in zip(flowcs, cs)}
     def replace(self, code:str)->str:
         for fc, c in self.sentences.items():
             if isinstance(fc, Pattern):
