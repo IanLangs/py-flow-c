@@ -7,14 +7,16 @@ def nomain(code):
     return code
 
 def all(code):
-    if not ("fn None init()" not in code and "fn None tick()" not in code):
-        if "fn None init()" not in code:
-            code += "fn None init() {\n\tpass\n}"
+    if "fn None init()" not in code and "fn None tick()" not in code:
+        code = nomain(code)
+        return code
+    if "fn None init()" not in code:
+        code += "fn None init() {\n\tpass\n}"
 
-        if "fn None tick()" not in code:
-            code += "fn None tick() {\npass\n}"
-            
-        if "fn int main(" not in code:
-            code += "fn int main() {\ninit();\n\tfor(;;) {\n\t\ttick();\n}\n\treturn 0;\n}"
+    if "fn None tick()" not in code:
+        code += "fn None tick() {\npass\n}"
+        
+    if "fn int main(" not in code:
+        code += "fn int main() {\ninit();\n\tfor(;;) {\n\t\ttick();\n}\n\treturn 0;\n}"
     code = nomain(code)
     return code
