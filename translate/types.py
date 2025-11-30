@@ -10,10 +10,13 @@ def primitive(code:str) -> str:
     def Nonetype(m:Match) -> str:
         r"""None"""
         return "void"
+    def Anypointer(m:Match) -> str:
+        """AnyPointer"""
+        return "void*"
     def func(m:Match) -> str:
         r"""fn"""
         return ""
-    for fn in (string, number, Nonetype, func):
+    for fn in (string, number, Nonetype, func, Anypointer):
         code = sub(str(fn.__doc__), fn, code)
     return code
 def all(code):
