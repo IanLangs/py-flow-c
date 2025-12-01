@@ -7,6 +7,9 @@ def primitive(code:str) -> str:
     def number(m:Match) -> str:
         r"""(int|float)"""
         return "int" if m.group(1) == "int" else "double"
+    def boolean(m:Match) -> str:
+        r"""(bool|true|false)"""
+        return "int" if m.group(1) == "bool" else ("1" m.group(1) == "true" else "0")
     def Nonetype(m:Match) -> str:
         r"""None"""
         return "void"
